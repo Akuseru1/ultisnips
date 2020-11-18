@@ -14,3 +14,5 @@ let g:UltiSnipsJumpBackwardTrigger="1"
 let g:UltiSnipsEditSplit="vertical"
 
 call plug#end()
+
+autocmd BufNewFile * execute "normal! imysnippet\<C-r>=UltiSnips#ExpandSnippet()\<CR>"
